@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #141e30, #243b55);
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.app {
+  width: 380px;
+  background: #1c2331;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(0,0,0,0.4);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.add-habit {
+  display: flex;
+  margin: 12px 0;
+}
+
+#habitInput {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 8px 0 0 8px;
+  outline: none;
+}
+
+#addBtn {
+  background: #00ff99;
+  border: none;
+  border-radius: 0 8px 8px 0;
+  cursor: pointer;
+  font-size: 20px;
+  color: #000;
+  width: 40px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #283046;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  transition: 0.3s;
+}
+
+.habit-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li.completed .habit-name {
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+
+button.delete {
+  background: crimson;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+.streak {
+  font-size: 0.9em;
+  color: #00ff99;
+}
+
+.progress-bar {
+  background: #2f3548;
+  border-radius: 10px;
+  height: 10px;
+  overflow: hidden;
+  margin: 5px 0 10px;
+}
+
+.progress {
+  background: linear-gradient(90deg, #00ff99, #0077ff);
+  height: 100%;
+  width: 0%;
+  transition: width 0.4s ease;
+}
+
+.stats {
+  background: #21293c;
+  padding: 10px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
