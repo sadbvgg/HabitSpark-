@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HabitSpark+</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <h1>🔥 HabitSpark+</h1>
+    <p class="quote">"Your habits define your horizon."</p>
+
+    <div class="add-habit">
+      <input type="text" id="habitInput" placeholder="Add a new habit..." />
+      <button id="addBtn">+</button>
+    </div>
+
+    <div class="stats">
+      <p><strong>Total Habits:</strong> <span id="totalCount">0</span></p>
+      <p><strong>Overall Progress:</strong></p>
+      <div class="progress-bar">
+        <div class="progress"></div>
+      </div>
+    </div>
+
+    <ul id="habitList"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
